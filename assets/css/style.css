@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+}
+
+/* Header */
+header {
+  display: inline;
+}
+nav {
+  background-color: #a7c7e7;
+  text-align: end;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  list-style-type: none;
+}
+nav ul li a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.active {
+  border-bottom: 4px solid #0096ff;
+  font-size: 1.2em;
+}
+.button a:hover {
+  border-bottom: 4px solid #0096ff;
+  text-shadow: 2px 2px #0096ff;
+}
+.icon {
+  color: white;
+  display: none;
+  margin-right: 20px;
+}
+
+/* Main */
+main {
+  margin: auto;
+  background-color: lightgrey;
+  width: 95%;
+  overflow: auto;
+}
+.content {
+  float: left;
+  width: 75%;
+}
+.card {
+  box-shadow: 0 4px 1px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: skyblue;
+  color: white;
+}
+#home h1 {
+  color: black;
+  text-shadow: 2px 2px white;
+}
+#hobbies h3,
+#about h3 {
+  color: #dfff00;
+  text-shadow: 2px 2px green;
+}
+.section-home-content img {
+  width: 100%;
+  max-height: 20em;
+  object-fit: cover;
+  object-position: center;
+}
+.section-hobbies-content {
+  display: flex;
+}
+.section-hobbies-content-card {
+  flex-grow: 1;
+  margin: 5px;
+  text-align: center;
+}
+.section-hobbies-content-card img {
+  width: 35%;
+}
+#tennis {
+  width: 42%;
+}
+aside {
+  padding-left: 30px;
+}
+.aside-content {
+  float: right;
+  margin: auto;
+  width: 25%;
+  color: white;
+}
+.aside-image {
+  text-align: center;
+}
+.aside-writer,
+.aside-social-media,
+.aside-contact {
+  padding-top: 5px;
+}
+.aside-image img {
+  width: 80%;
+}
+.aside-biodata {
+  text-align: left;
+  padding-top: 10px;
+}
+.aside-social-media {
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+}
+.flex-container-item {
+  flex-grow: 1;
+}
+.flex-container-item p {
+  display: none;
+}
+.aside-contact-content {
+  display: flex;
+}
+.aside-contact-content img {
+  flex-grow: 1;
+}
+.aside-contact-content p {
+  flex-grow: 3;
+  margin-left: 10px;
+}
+
+/* Footer */
+footer {
+  margin-top: 25px;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: #a7c7e7;
+}
+
+@media screen and (max-width: 700px) {
+  .section-hobbies-content {
+    display: block;
+    width: 100%;
+  }
+  .section-hobbies-content-card img {
+    width: 15%;
+  }
+  #tennis {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 513px) {
+  .button {
+    display: none;
+  }
+  .icon {
+    float: right;
+    display: block;
+  }
+  .responsive {
+    position: relative;
+  }
+  .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content,
+  aside {
+    width: 100%;
+    padding: 0;
+    float: none;
+  }
+  .aside-content {
+    float: none;
+    width: 100%;
+  }
+  .flex-container-item {
+    display: flex;
+  }
+  .flex-container-item p {
+    margin-left: 5px;
+    display: initial;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .aside-contact-content {
+    text-align: center;
+    display: block;
+  }
+}
