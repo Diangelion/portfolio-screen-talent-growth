@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Richie's Website</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li class="button active"><a href="#home">HOME</a></li>
+          <li class="button"><a href="#hobbies">HOBBIES</a></li>
+          <li class="button"><a href="#about">ABOUT</a></li>
+          <li>
+            <a href="javascript:void(0);" class="icon" onClick="showDropdown()"
+              >&#9776;</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content">
+        <article id="home" class="card">
+          <section class="section-home-header">
+            <h1>Hello, welcome to my website!</h1>
+            <p>
+              This website is used to fulfil my internship test. I hope you guys
+              can enjoy looking around my website.
+            </p>
+          </section>
+          <section class="section-home-content">
+            <p>
+              By the way, I have a motivational senteces that I got from
+              <q>The Amazing Spider-Man 2</q> Movie
+            </p>
+            <img
+              src="assets/img/home/home-header.jpg"
+              alt="The Amazing Spider-Man 2"
+            />
+            <blockquote>
+              <q>
+                It's easy to feel hopeful on a beautiful day like today, but
+                there will be dark days ahead of us too. There will be days
+                where you feel all alone, and that's when hope is needed most.
+                No matter how buried it gets, or how lost you feel, you must
+                promise me that you will hold on to hope. Keep it alive. We have
+                to be greater than what we suffer. My wish for you is to become
+                hope; people need that. And even if we fail, what better way is
+                there to live? As we look around here today, at all of the
+                people who helped make us who we are, I know it feels like we're
+                saying goodbye, but we will carry a piece of each other into
+                everything that we do next, to remind us of who we are, and of
+                who we're meant to be.</q
+              >
+              ~ Gwen Stacy
+            </blockquote>
+            <p>
+              I hope that sentence can make you guys keep going to learn about
+              Website Developer!
+            </p>
+          </section>
+        </article>
+
+        <article id="hobbies" class="card">
+          <section class="section-hobbies-header">
+            <h3>My Hobbies</h3>
+            <p>
+              I love to do some sports like Football, Badminton, and Table
+              Tennis.
+            </p>
+          </section>
+          <section class="section-hobbies-content">
+            <div class="section-hobbies-content-card">
+              <img
+                src="assets/img/hobbies-icon/football-icon.png"
+                alt="Football"
+              />
+              <p>
+                This is my most favourite sport. I love to play football since I
+                was kid, maybe when I was at Elementary School. I play with my
+                classmate together before class.
+              </p>
+            </div>
+            <div class="section-hobbies-content-card">
+              <img
+                src="assets/img/hobbies-icon/badminton-icon.png"
+                alt="Badminton"
+              />
+              <p>
+                Same as Football, I play Badminton since I was kid. But, the
+                difference is I play Badminton with my siblings and I play
+                Badminton when I was in the holidays.
+              </p>
+            </div>
+            <div class="section-hobbies-content-card">
+              <img
+                id="tennis"
+                src="assets/img/hobbies-icon/table-tennis-icon.png"
+                alt="Table Tennis"
+              />
+              <p>
+                I play table tennis since I was at Senior High School. I play
+                table tennis during the class break. Or maybe during sports
+                lessons.
+              </p>
+            </div>
+          </section>
+        </article>
+
+        <article id="about" class="card">
+          <h3>About Me</h3>
+          <p>
+            I am a student at who studies Computer Science at Multimedia
+            Nusantara University. I am a stubborn person, but i also accept
+            criticism and suggestions to develop myself to be better in the
+            future. Besides of that, I am an easy-going person and friendly.
+          </p>
+          <p>
+            I am currently learning about Front-End website development, such as
+            HTML5, JavaScript, CSS, and React. I love watching React Hooks and
+            try to understand it, along with any new technologies applied in
+            React. Tailwind with DaisyUI is also interested me. Besides tech, I
+            also learning about Japanese because of anime, 'HAHA'. Thank you if
+            you spend your time just to read this information about me. I am
+            still continuing to make a new journey and to be better each day.
+          </p>
+        </article>
+      </div>
+
+      <aside>
+        <article class="aside-content">
+          <article class="aside-writer card">
+            <section class="aside-image">
+              <h1>BIODATA</h1>
+              <img src="assets/img/aside/profile.jpg" alt="Bryan Richie" />
+            </section>
+            <section class="aside-biodata">
+              <table>
+                <tr>
+                  <th>Name</th>
+                  <td>:</td>
+                  <td>Bryan Richie Irawan</td>
+                </tr>
+                <tr>
+                  <th>Age</th>
+                  <td>:</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <th>Date of Birth</th>
+                  <td>:</td>
+                  <td>September 11<sup>th</sup>, 2003</td>
+                </tr>
+              </table>
+            </section>
+          </article>
+
+          <article class="aside-social-media card">
+            <h1>Follow me on Social Media</h1>
+            <div class="flex-container">
+              <div class="flex-container-item">
+                <a
+                  href="https://web.facebook.com/bryan.irawan.5/"
+                  target="_blank"
+                  ><img
+                    src="assets/img/social-media/facebook-icon.svg"
+                    alt="Facebook"
+                /></a>
+                <p>Facebook</p>
+              </div>
+              <div class="flex-container-item">
+                <a href="https://www.instagram.com/brynrc_/" target="_blank"
+                  ><img
+                    src="assets/img/social-media/instagram-icon.svg"
+                    alt="Instagram"
+                /></a>
+                <p>Instagram</p>
+              </div>
+              <div class="flex-container-item">
+                <a href="https://github.com/Diangelion" target="_blank"
+                  ><img
+                    src="assets/img/social-media/github-icon.svg"
+                    alt="GitHub"
+                /></a>
+                <p>GitHub</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="aside-contact card">
+            <h1>Contact me</h1>
+            <div class="aside-contact-content">
+              <img src="assets/img/contact-icon/gmail-icon.svg" alt="Gmail" />
+              <p>bryanrichie92@gmail.com</p>
+            </div>
+          </article>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Website &copy; 2023, Bryan Richie Irawan</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
